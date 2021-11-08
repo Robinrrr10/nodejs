@@ -35,3 +35,30 @@ Nodejs will convert javascript code into machine code using v8 engine
 
 
 ---
+
+global object:
+-----------
+console.log("")   //console is one of global object
+
+
+setTimeout(functionName, milliSec) //This will call given function after given millisec
+Eg:
+setTimeout(myfunction, 4000)
+
+setInterval(functionName, milliSec) //This will call given function in every interval of time
+clearInterval(varName) //This is to clear the set Interval
+
+Eg:
+let time = 0
+let timer = setInterval(function(){ //this is used to call function in every given interval
+  time += 4
+  console.log(time, " sec passed")
+  if(time > 20) {
+    clearInterval(timer)
+  }
+}, 
+
+console.log(__dirname) //to show current directory
+console.log(__filename) //To show current filename
+
+---
