@@ -62,3 +62,28 @@ console.log(__dirname) //to show current directory
 console.log(__filename) //To show current filename
 
 ---
+
+function expression:
+-------------------
+
+taking function as a object/variable is called as function expression
+
+//function expression
+var hello = function(){
+  console.log("helloooo");
+}
+
+hello();
+
+
+
+
+function myfunctionDa(funcName){
+  funcName();
+}
+var pen = function(){
+  console.log("pennn");
+}
+
+
+---
