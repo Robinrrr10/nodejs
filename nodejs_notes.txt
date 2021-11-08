@@ -26,3 +26,12 @@ node app.js
 
 ------
 
+v8 engine:
+---------
+
+nodejs is internally written in c++
+heart of nodejs is v8 engine
+Nodejs will convert javascript code into machine code using v8 engine
+
+
+---
