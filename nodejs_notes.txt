@@ -1,0 +1,28 @@
+NodeJs:
+------
+
+Node js is platform to run nodejs application.
+
+It is in javascript
+
+It is used to read, write and delete files
+
+It can easily connect to db
+
+----
+
+
+Installation:
+------------
+1. Download node js from official website and double click and install
+2. Use below command to check whether node js is installed or not
+node -v                 //This will show version of nodejs
+
+To run application use below command
+node filename
+Eg: node app
+or
+node app.js
+
+------
+
