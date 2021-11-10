@@ -110,3 +110,54 @@ console.log(counter([34, 23, 12, 44]))
 
 
 ---
+
+
+module pattern (Exporting multiple functions or variables):
+--------------
+
+module.exports.name1 = variableOrFunctionName1   //set each properties for function or variable to export
+module.exports.name2 = variableOrFunctionName2
+module.exports.name3 = variableOrFunctionName3
+
+or
+
+module.exports = {       //set each properties for function or variable to export
+name1: variableOrFunctionName1,
+name2: variableOrFunctionName2,
+name3: variableOrFunctionName3
+}
+
+
+
+Eg:
+
+var count = function(arr){
+  return 'length is' + arr.length;
+}
+
+var add = function(a, b) {
+  return `addition result is ${a+b}`
+}
+
+var name = "dinesh";
+
+module.exports.count = count;
+module.exports.addition = add;
+module.exports.user = name;
+
+or
+
+module.exports = {
+  count: count,
+  addition: add,
+  customer: name
+}
+
+---
+
+
+
+---
+
+
+
