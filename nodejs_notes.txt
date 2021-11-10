@@ -87,3 +87,26 @@ var pen = function(){
 
 
 ---
+
+module and require():
+-------------------
+require('givePathOfImportingFile')       //This is used to import other js files/function
+module.exports = giveFunctionOrVariableName   //Here we will give what function can be exported and used outside
+
+
+Eg:
+in file1.js:
+var count = function(arr){
+  return 'length is: ' + arr.length;
+};
+
+module.exports = count;      //This is used export count  function outside this file as well
+
+
+in file2.js
+var counter = require('./file1'); //file name. no need of .js //This is used to import
+
+console.log(counter([34, 23, 12, 44]))
+
+
+---
