@@ -19,6 +19,6 @@ allPeople.forEach(function(eachPer){
   })
 });
 
-ram.emit('speak', 'hello') //as i used for all object in array, speak will work for all obj in array
+ram.emit('speak', 'hello') //Using emit i called speak action // as i used for all object in array, speak will work for all obj in array
 raja.emit('speak', 'hi man')
 babu.emit('speak', 'my message da')

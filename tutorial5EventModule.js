@@ -6,4 +6,4 @@ myEmitter.on('perform', function(message){ //here 'perform' action is created on
   console.log(message)
 })
 
-myEmitter.emit('perform', 'do something here') //Here perform action is called with another param which will be used
+myEmitter.emit('perform', 'do something here') //Here emit is used to call the perform action. it is called with another param which will be used
