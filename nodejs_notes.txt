@@ -238,8 +238,28 @@ fs.writeFile('tutorial6SampleFile6.txt', mystr, function(){ //This used to write
 console.log("Writing is above. but still this line is executed as this async")
 
 
+---
+
+To remove file:
+--------------
+fs.unlinkSync('filename')//this is used to remove the file
+fs.unlink('filename') //This will remove the file using asycn method
+//if file is not there, it will throw error
+
 
 ---
 
 
+Creating and removing directory:
+---------------------------------
+
+fs.mkdirSync('nameofdirectory') //creating directory
+fs.mkdir('nameofdirectory', ) //async method to create directory
+
+fs.rmdirSync('nameofdirector') //to remove directory
+fs.rmdir('nameofdirector') //async method to remove directory
+//directory can be removed only if directory is empty.
+If it is not empty it will throw error. in such case we need to remove the files inside directory, then we have to remove
+
+-------------------------
 
