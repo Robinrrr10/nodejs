@@ -263,3 +263,31 @@ If it is not empty it will throw error. in such case we need to remove the files
 
 -------------------------
 
+below understand would be better:
+-------------------------------
+client server
+protocols
+ports
+
+
+------------------------
+
+
+creating server:
+----------------
+
+var http = require('http') //this http package contains all http related utils
+
+var server = http.createServer(function(req, res){    //to create server
+  console.log("End point called:" + req.url); //req.url is ther url from request
+  res.writeHead(200, {'Content-Type': 'text/plain'}); //to add status code and headers
+  res.end("Hi man"); //to add response body
+});
+
+server.listen(3000, '127.0.0.1');       //To run server in ip and port. so server will listen in this port
+console.log('Listening port 3000');
+
+
+
+--------------------------
+
