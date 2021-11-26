@@ -291,3 +291,42 @@ console.log('Listening port 3000');
 
 --------------------------
 
+buffer:
+------
+Sending large data into part by part and transfer to other
+
+
+Stream:
+-------
+Continuously sending data to other place
+
+To send large data, it will send part by part continously 
+
+
+Writable streams: //used to write part by part
+Allow node js to write data to a stream
+
+Readable stream: //used to read part by part
+Allow node js to read data from a stream
+
+Duplex:
+can read and write to a stream
+
+----
+
+Readable stream example:
+----------------------
+
+var fs = require('fs')
+var file = __dirname + '/tutorial9SampleFile1.txt'
+var myReadStream = fs.createReadStream(file, 'utf8'); //this is used to create read stream //Here we given file name and format
+
+myReadStream.on('data', function(chunk){     // data event will used to read in part by part
+  console.log("READING EACH CHUNK::::::::::::::::::::::::::::::");
+  console.log(chunk);
+});
+
+
+
+-----------
+
