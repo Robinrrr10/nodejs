@@ -475,4 +475,24 @@ we can use this libraries to add in application after installation
 
 ---
 
+
+package.json file:
+---
+
+npm init //this will get few inputes and used to create fresh application
+This will also add package.json
+
+
+npm install express - save //sample command to install some package and save this as dependencies in package.json as like below
+Eg:
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+
+once we uninstall the package it will be removed. This is like depencies
+
+npm install     //This will download dependencies and build the application
+
+
+
 ---------
