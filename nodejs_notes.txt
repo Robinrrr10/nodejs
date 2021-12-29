@@ -493,6 +493,19 @@ once we uninstall the package it will be removed. This is like depencies
 
 npm install     //This will download dependencies and build the application
 
+----
 
+nodemon:
+-------
+
+ //This is used to restart the application automatically when any changes done on any file  of the app.
+
+To install: 
+npm install nodemon -g //This will globally install nodemon in system
+
+
+To run the application using nodemon:
+nodemon filename.js          //This will run the application. when any changes done on any files, it will automatically restart the application
+Eg: nodemon app.js              
 
 ---------
