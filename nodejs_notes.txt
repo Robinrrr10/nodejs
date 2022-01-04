@@ -543,3 +543,29 @@ app.get('/about',function(req, res){
 
 app.listen(3000)
 
+
+
+---
+
+routing in express:
+----------
+
+Path param will be given as like below
+:name
+
+It will be access by
+req.params.name
+
+
+var express = require('express')
+
+var app = express()
+
+app.get('/user/:id', function(req, res){ //:id is the path param
+  res.send("id given in end point is:" + req.params.id) //it is access by req.params.id
+})
+
+app.listen(3000)
+
+
+----
