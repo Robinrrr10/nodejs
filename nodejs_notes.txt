@@ -509,3 +509,37 @@ nodemon filename.js          //This will run the application. when any changes d
 Eg: nodemon app.js              
 
 ---------
+
+express:
+-------
+
+It is easy and flexible routing system
+It can be easily integrate with different template liberary
+contains middleware framework
+
+npm install express -save
+
+
+app.get('route', function)
+app.post('route', function)
+app.delete('route', function)
+
+
+Eg:
+var express = require('express');
+var app = express();
+
+app.get('/', function(req, res){
+  res.send('Home page')
+});
+
+app.get('/contact', function(req, res){
+  res.send('Contact page')
+});
+
+app.get('/about',function(req, res){
+  res.send('About page')
+});
+
+app.listen(3000)
+
