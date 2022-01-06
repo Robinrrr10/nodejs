@@ -569,3 +569,39 @@ app.listen(3000)
 
 
 ----
+
+
+Templating engine:
+
+We can send dynamic data to html page using ejs template
+
+To install ejs
+
+npm install ejs
+
+Add below to set ejs in application:
+app.set('view engine', 'ejs')
+
+Create views as folder and add ejs template file inside views folder. //ejs file is just html file with ejs extension
+
+Use render for template
+
+app.get('/profileUser/:name', function(req, res){
+  var data = {age: 24, dept: 'cse'};
+  res.render('user', {username: req.params.name, userdata: data})  //here user.ejs file should be available to views folder
+})
+
+below is sample data inside html user.ejs file
+<h2>Here user is <%= username %></h2>
+<h2>Here user age: <%= userdata.age %></h2>
+<h2>Here user department: <%= userdata.dept %></h2>
+
+
+For example refer tutorial19TemplateEjs folder in nodejs repo
+
+----
+
+
+
+
+---
