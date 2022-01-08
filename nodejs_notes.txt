@@ -583,6 +583,8 @@ Add below to set ejs in application:
 app.set('view engine', 'ejs')
 
 Create views as folder and add ejs template file inside views folder. //ejs file is just html file with ejs extension
+views folder is mandatory
+We should have ejs file only into views folder
 
 Use render for template
 
@@ -622,6 +624,22 @@ refer tutorial20TemplateEngine2
 ---
 
 
+Partial views:
+-----------
+It is used to have content in most of web page, use partial views
+
+Create a folder and add common content on html in ejs file inside the folder
+
+Using below code, include partial view file in other views ejs page
+
+<%- include ('path/file.ejs') %> //Give file path of partial views
+
+We use command content like home, contact, about etc in all pages using this
+
+
+For example refer tutorial21PartialViews
+
+----
 
 
 
