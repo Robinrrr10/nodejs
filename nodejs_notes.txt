@@ -591,6 +591,8 @@ app.get('/profileUser/:name', function(req, res){
   res.render('user', {username: req.params.name, userdata: data})  //here user.ejs file should be available to views folder
 })
 
+in template file we use <%= give object or var name here %>
+
 below is sample data inside html user.ejs file
 <h2>Here user is <%= username %></h2>
 <h2>Here user age: <%= userdata.age %></h2>
@@ -600,6 +602,26 @@ below is sample data inside html user.ejs file
 For example refer tutorial19TemplateEjs folder in nodejs repo
 
 ----
+
+For iterating:
+
+Give as like below
+
+All javasript code should be written in <% Give code here %>
+
+<% userdata.hobbies.forEach(function(item){ %>
+      <h3><%= item %></h3>
+    <% }); %>
+
+
+
+Eg:
+refer tutorial20TemplateEngine2
+
+
+---
+
+
 
 
 

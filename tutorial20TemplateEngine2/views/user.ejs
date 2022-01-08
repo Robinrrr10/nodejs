@@ -1,0 +1,20 @@
+<!Doctype html>
+<html>
+  <head>
+    <style>
+      body{background: blue; font-family: verdana; color: #fff; padding: 30px;}
+      h1{text-transform: uppercase; letter-spacing: 2px; text-align: center;}
+      h2{text-align: center; color: black;}
+    </style>
+  </head>
+  <body>
+    <h1>User page</h1>
+    <h2>Here user is <%= username %></h2>
+    <h2>Here user age: <%= userdata.age %></h2>
+    <h2>Here user department: <%= userdata.dept %></h2>
+    <h2>Hobbies</h2>
+    <% userdata.hobbies.forEach(function(item){ %>
+      <h3><%= item %></h3>
+    <% }); %>
+  </body>
+</html>
