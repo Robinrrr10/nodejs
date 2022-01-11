@@ -641,7 +641,33 @@ For example refer tutorial21PartialViews
 
 ----
 
+Middleware:
+----------
+
+Middle ware is inbetween request and response
+
+Eg:
+app.use('/mypath', function(req, res, next){  //Whatever end point start with /mypath, here it will come and then move next matching one
+  console.log("comming here when path start with given as above. then rest of the end point is:" + req.url)
+  next(); //Then search of next matching one
+});
+//above is the middleware
+
+app.get('/mypath/hey', function(req, res){
+  res.send('middle ware')
+})
 
 
+For example refer tutorial22MiddleWareAndStaticFiles
+
+Static files:
+-------------------
+
+app.use('/mystyles', express.static('myfiles'))  //given endpoint and folder name which has static files. Here endpoint is /mystyles and folder name is my files.
+
+We can use css and other files here.
+
+
+For example refer tutorial22MiddleWareAndStaticFiles
 
 ---
