@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+  <body>
+    <h1>contact page</h1>
+    <p>This is contact page</p>
+    <h1>name: <%= user.name %></h1>
+    <h1>age: <%= user.age %></h1>
+    <br><br>
+    <form id="just-contact-form">
+      <label for="usr">Person name:</label><br>
+      <input type="text" name="usr" value="<%= user.name %>" /><br><br>
+      <label for="ag">Age:</label><br>
+      <input type="number" name="ag" value="<%= user.age %>" /><br><br>
+      <label for="email">Email</label><br>
+      <input type="email" name="email" /><br><br>
+      <input type="submit" value="Submit" /><br>
+    </form>
+  </body>
+</html>

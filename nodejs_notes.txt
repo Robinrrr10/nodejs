@@ -671,3 +671,19 @@ We can use css and other files here.
 For example refer tutorial22MiddleWareAndStaticFiles
 
 ---
+
+Query strings:
+-----------
+
+query strings are query param which comes from request.
+
+req.query //To get all query params
+req.query.name //to get one query param. here i have given name
+
+For example refer tutorial23QueryStrings
+
+--
+
+
+
+----
