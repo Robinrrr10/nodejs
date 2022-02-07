@@ -685,5 +685,16 @@ For example refer tutorial23QueryStrings
 --
 
 
+Handling POST request:
+-------------
+
+
+we can install body-parser to use request body in code
+
+For example refer tutorial24PostRequest
+
+
+---
+
 
 ----

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<body bgcolor="green">
+  <h1>Contact page</h1>
+  <h3>Please fill the contact</h3>
+  <p>User is: <%= user.name %></p>
+  <p>User age is: <%= user.age %></p>
+  <br><br>
+  <form id="justaform" method="POST" action="/create">
+    <label for="usr">Person name</label>
+    <input type="text" name="usr" value="<%= user.name %>" /><br><br>
+    <label for="ag">Person age</label>
+    <input type="number" name="ag" value="<%= user.age %>" /><br><br>
+    <label for="em">Person email</label>
+    <input type="email" name="em" /><br><br>
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
